@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-123456789" crossorigin="anonymous" />
+
+</head>
+<body>
+
+<div id="content">
+    <h1>Welcome to My Portfolio</h1>
+    <p>
+        My name is Umtha-Unathi Mavuso, I am a Game designer, web developer and your friendly neighbourhood Spiderman.
+        <img src="images/spidey.png" alt="Spidey Logo" width="20" height="20"> 
+    </p> 
+    <p>
+        This website showcases some of my work and thoughts in various areas.
+    </p>
+
+    <img src="images/OldMan Coding.gif" alt="OldMan coding" width="524" height="276">
+
+    <p>
+        Explore my <a href="./html/blogpage.html">Blog</a>, check out my <a href="./html/portfolio.html">Portfolio</a>, or view my <a href="./html/design.html">Designs</a>.
+    </p>
+    
+</div>
+
+<footer>
+    <p>Contact me at:</p>
+    <p><i class="fas fa-envelope"></i> E-mail: umthaoupa@gmail.com </p>
+    <p><i class="fas fa-phone"></i> Contact no: 0745809483</p>
+    <p><i class="fab fa-github"></i> GitHub: UmthaUnathi21</p> 
+</footer>
+
+
+<script>
+    // Redirect function for clicking on links
+    function redirectToPage(page) {
+        window.location.href = page;
+    }
+    
+    // Add event listeners to links
+    document.querySelector('a[href="./html/blogpage.html"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        redirectToPage('./html/blogpage.html');
+    });
+    
+    document.querySelector('a[href="./html/portfolio.html"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        redirectToPage('./html/portfolio.html');
+    });
+    
+    document.querySelector('a[href="./html/design.html"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        redirectToPage('./html/design.html');
+    });
+</script>
+
+</body>
+</html>
